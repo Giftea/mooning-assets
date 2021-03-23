@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SharedModule } from '../shared/shared.module';
-
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CountToModule } from 'angular-count-to';
@@ -21,7 +19,6 @@ import { Layout5Component } from './layout5/layout5.component';
   imports: [
     CommonModule,
     LayoutsRoutingModule,
-    SharedModule,
     ScrollToModule.forRoot(),
     CarouselModule,
     CountToModule
