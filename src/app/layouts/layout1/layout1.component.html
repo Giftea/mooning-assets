@@ -9,8 +9,11 @@
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
             <i class="mdi mdi-menu"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse" id="navbarCollapse"> 
             <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                <div class="call-no">
+                    <a href="#" class="nav-link text-warning"><i class="mdi mdi-phone mr-1"></i> +447868747429</a>
+                </div>  
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
                     <a [ngxScrollTo]="'#home'" href="javascript: void(0);" class="nav-link">Home</a>
                 </li>
@@ -32,10 +35,7 @@
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'clients'}">
                     <a [ngxScrollTo]="" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">Login</a>
                 </li>
-            </ul>
-            <div class="call-no">
-                <a href="#" class="nav-link text-warning"><i class="mdi mdi-phone mr-1"></i> +447868747429</a>
-            </div>            
+            </ul>          
         </div>
     </div>
 </nav>
@@ -67,5 +67,6 @@
     <app-services></app-services>
     <app-features></app-features>
     <app-clients></app-clients>
+    <app-contact></app-contact>
     <app-footer></app-footer>
 </div>
