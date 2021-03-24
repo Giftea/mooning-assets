@@ -19,6 +19,8 @@
     transition: all 0.5s ease-in-out;
     background-color: transparent;
     .logo {
+        font-size: 15px;
+        margin-top: 8px;
         .logo-dark {
             display: none;
         }
@@ -179,6 +181,7 @@
             width: 90%;
         }
         .logo {
+            margin-top: 14px;
             .logo-dark {
                 display: inline-block !important;
             }
