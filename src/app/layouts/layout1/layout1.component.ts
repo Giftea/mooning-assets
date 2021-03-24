@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component,Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-layout1',
@@ -14,6 +14,9 @@ export class Layout1Component implements OnInit {
 
   ngOnInit(): void {
   }
+ scrollTo(section){
+   document.querySelector('#' + section).scrollIntoView()
+ }
 
   /**
    * Window scroll method

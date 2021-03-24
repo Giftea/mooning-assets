@@ -10,10 +10,10 @@ import { Layout5Component } from './layout5/layout5.component';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: '/layout-1', pathMatch: 'full'
+        redirectTo: '/home', pathMatch: 'full'
     },
     {
-        path: 'layout-1',
+        path: 'home',
         component: Layout1Component
     },
     {

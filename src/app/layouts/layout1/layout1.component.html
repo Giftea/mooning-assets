@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark" (window:scroll)="windowScroll()" id="navbar">
     <div class="container">
         <!-- LOGO -->
-        <a class="navbar-brand logo" href="layout-2">
+        <a class="navbar-brand logo" href="home">
             <img src="assets/images/logo.png" alt="" class="" height="50">
         </a>
         <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" 
@@ -41,7 +41,7 @@
 </nav>
 <!-- Navbar End -->
 
-<div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+<div scrollSpy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
 <!-- Hero Start -->
 <section class="hero-1-bg position-relative bg-light d-flex align-items-center" id="home">
     <div class="container">
@@ -51,7 +51,7 @@
                     <p class="text-uppercase text-primary font-weight-medium f-14 mb-4">Safest way to Trade.</p>
                     <h1 class="hero-1-title mb-4 font-weight-normal line-height-1_4"> Mooning Asset is surest way to trade, the best platform to buy and sell zero hassles.</h1>
                     <p class="text-muted mb-4 pb-2"> </p>
-                    <a href="" class="btn btn-warning">Find Out How <span class="ml-2 right-icon">&#8594;</span></a>
+                    <a [ngxScrollTo]="'#services'" href="javascript: void(0)"  [ngxScrollToOffset]="2" class="btn btn-warning">Find Out How <span class="ml-2 right-icon">&#8594;</span></a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -67,6 +67,5 @@
     <app-services></app-services>
     <app-features></app-features>
     <app-clients></app-clients>
-    <!-- <app-contact></app-contact> -->
     <app-footer></app-footer>
 </div>
