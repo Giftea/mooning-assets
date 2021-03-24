@@ -17,11 +17,11 @@ const routes: Routes = [
         component: Layout1Component
     },
     {
-        path: 'layout-2',
+        path: 'register',
         component: Layout2Component
     },
     {
-        path: 'layout-3',
+        path: 'login',
         component: Layout3Component
     },
     {

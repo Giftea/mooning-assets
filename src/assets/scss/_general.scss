@@ -18,24 +18,4 @@ p {
     line-height: 1.8;
 }
 
-.btn-sign-in{
-    background-color: $warning;
-    border: none;
-    outline: none;
-    color: $white;
-}
-
-.btn-log-in{
-    background-color: $muted;
-    border: none;
-    outline: none;
-    color: $dark;
-    margin-left: 8px;
-}
-@media screen and (max-width:700px){
-.btn-log-in{
-    margin-top:10px;
-     margin-left: 0;
-}
-}
 

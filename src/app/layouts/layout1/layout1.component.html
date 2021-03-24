@@ -29,13 +29,12 @@
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'clients'}">
                     <a [ngxScrollTo]="'#clients'" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">Clients</a>
                 </li>
-                <li class="nav-item" [ngClass]="{'active':currentSection === 'clients'}">
-                    <button [ngxScrollTo]="" href="javascript: void(0);" class="btn btn-sign-in" [ngxScrollToOffset]="2">Register</button>
-                </li>
-                <li class="nav-item" [ngClass]="{'active':currentSection === 'clients'}">
-                    <button [ngxScrollTo]="" href="javascript: void(0);" class="btn btn-log-in" [ngxScrollToOffset]="2">Login</button>
-                </li>
-            </ul>          
+                
+
+            </ul> 
+            <a  href="register" class="btn btn-warning" >Register</a>
+            <a href="login"  class="btn btn-muted ml-2" >Login</a>
+
         </div>
     </div>
 </nav>
