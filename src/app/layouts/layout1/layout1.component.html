@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse"> 
             <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
                 <div class="call-no">
-                    <a href="#" class="nav-link text-warning"><i class="mdi mdi-phone mr-1"></i> +447868747429</a>
+                    <a href="#" class="nav-link text-warning mr-4"><i class="mdi mdi-phone mr-1"></i> +447868747429</a>
                 </div>  
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
                     <a [ngxScrollTo]="'#home'" href="javascript: void(0);" class="nav-link">Home</a>
@@ -30,10 +30,10 @@
                     <a [ngxScrollTo]="'#clients'" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">Clients</a>
                 </li>
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'clients'}">
-                    <a [ngxScrollTo]="" href="javascript: void(0);" class="btn " [ngxScrollToOffset]="2">Register</a>
+                    <button [ngxScrollTo]="" href="javascript: void(0);" class="btn btn-sign-in" [ngxScrollToOffset]="2">Register</button>
                 </li>
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'clients'}">
-                    <a [ngxScrollTo]="" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">Login</a>
+                    <button [ngxScrollTo]="" href="javascript: void(0);" class="btn btn-log-in ml-3" [ngxScrollToOffset]="2">Login</button>
                 </li>
             </ul>          
         </div>
