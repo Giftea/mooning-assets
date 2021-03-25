@@ -1,113 +1,88 @@
 <!--Navbar Start-->
-<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light" (window:scroll)="windowScroll()" id="navbar">
-    <div class="container">
-        <!-- LOGO -->
-        <!-- <a class="navbar-brand logo" href="layout-3">
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light"
+  (window:scroll)="windowScroll()"
+  id="navbar"
+>
+  <div class="container">
+    <!-- LOGO -->
+    <!-- <a class="navbar-brand logo" href="layout-3">
             <img src="assets/images/logo-light.png" alt="" class="logo-light" height="21">
             <img src="assets/images/logo-dark.png" alt="" class="logo-dark" height="21">
         </a> -->
-        <div class="navbar-brand logo" href="home">
-            <h4 class=" text-light logo-light">The Safest platform to Trade</h4>
-            <h4 class=" text-primary logo-dark">The Safest platform to Trade</h4>
-           
-        </div>
-        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" 
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
-            <i class="mdi mdi-menu"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
-                <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
-                    <a [ngxScrollTo]="'#home'" href="home" class="nav-link">Home</a>
-                </li>
-            </ul>
-            <a href="register"  class="btn btn-warning" >Register</a>
-                 
-        </div>
+    <div class="navbar-brand logo" href="home">
+      <h4 class="text-light logo-light">The Safest platform to Trade</h4>
+      <h4 class="text-primary logo-dark">The Safest platform to Trade</h4>
     </div>
+    <button
+      class="navbar-toggler p-0"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="toggleMenu()"
+    >
+      <i class="mdi mdi-menu"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+        <li class="nav-item" [ngClass]="{ active: currentSection === 'home' }">
+          <a [ngxScrollTo]="'#home'" href="home" class="nav-link">Home</a>
+        </li>
+      </ul>
+      <a href="register" class="btn btn-warning">Register</a>
+    </div>
+  </div>
 </nav>
 <!-- Navbar End -->
 
 <div>
-<!-- Hero Start -->
-<section class="hero-2-bg position-relative d-flex align-items-center bg" id="home">
-    
-        <div class="wrapper wrapper--w680">
-            <div class="card card-4">
-                <div class="card-body">
-                    <h2 class="title "><img src="../../../assets/images/favicon.ico" height="35" class="mr-2 mb-1"  />Mooning <span class="text-warning">Assets</span></h2>
-                    <form method="POST">
-                        <!-- <div class="row row-space">
-                            <div class="col-md-6 col-12">
-                                <div class="input-group">
-                                    <label class="label">first name</label>
-                                    <input class="input--style-4" type="text" name="first_name">
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <div class="input-group">
-                                    <label class="label">last name</label>
-                                    <input class="input--style-4" type="text" name="last_name">
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="row row-space">
-                            <div class="col-md-6 col-12">
-                                <div class="input-group">
-                                    <label class="label">Password</label>
-                                    <input class="input--style-4" type="password" name="password">
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-9">
-                                <div class="input-group">
-                                    <label class="label">Gender</label>
-                                    <div class="p-t-10">
-                                        <label class="radio-container m-r-45">Male
-                                            <input type="radio" checked="checked" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="radio-container">Female
-                                            <input type="radio" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="row row-space">
-                            <div class=" col-12">
-                                <div class="input-group">
-                                    <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
-                                </div>
-                            </div>
-                            <div class=" col-12">
-                                <div class="input-group">
-                                    <label class="label">Password</label>
-                                    <input class="input--style-4" type="password" name="password">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="input-group">
-                            <label class="label">Subject</label>
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="subject">
-                                    <option disabled="disabled" selected="selected">Choose option</option>
-                                    <option>Subject 1</option>
-                                    <option>Subject 2</option>
-                                    <option>Subject 3</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div> -->
-                        <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn-warning" type="submit">Login</button>
-                        </div>
-                    </form>
+  <!-- Hero Start -->
+  <section
+    class="hero-2-bg position-relative d-flex align-items-center bg"
+    id="home"
+  >
+    <div class="wrapper wrapper--w680">
+      <div class="card card-4">
+        <div class="card-body">
+          <h2 class="title">
+            <img
+              src="../../../assets/images/favicon.ico"
+              height="35"
+              class="mr-2 mb-1"
+            />Mooning <span class="text-warning">Assets</span>
+          </h2>
+          <h4 class="text-center text-primary mb-3">Login into your Account</h4>
+          <form method="POST">
+            <div class="row row-space mt-3">
+              <div class="col-12">
+                <div class="input-group">
+                  <label class="label">Email</label>
+                  <input class="input--style-4" type="email" name="email" />
                 </div>
+              </div>
+              <div class="col-12">
+                <div class="input-group">
+                  <label class="label">Password</label>
+                  <input
+                    class="input--style-4"
+                    type="password"
+                    name="password"
+                  />
+                </div>
+              </div>
             </div>
+            <div class="p-t-15">
+              <button class="btn btn--radius-2 btn-warning" type="submit">
+                Login
+              </button>
+            </div>
+          </form>
         </div>
-   
+      </div>
+    </div>
 
     <!-- Jquery JS-->
     <script src="../../../assets/vendor/jquery/jquery.min.js vendor/jquery/jquery.min.js"></script>
@@ -118,6 +93,6 @@
 
     <!-- Main JS-->
     <script src="../../../assets/js/global.js"></script>
-</section>
-<app-footer class="footer"></app-footer>
+  </section>
+  <app-footer class="footer"></app-footer>
 </div>
