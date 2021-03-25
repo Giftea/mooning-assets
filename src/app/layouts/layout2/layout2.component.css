@@ -12,6 +12,9 @@
   /* ==========================================================================
      #GRID
      ========================================================================== */
+     .bg{
+       background-image: url("../../../assets/images/chart.jpeg");
+     }
   .row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -37,8 +40,9 @@
     width: calc((100% - 30px) / 2);
   }
   .card.card-4{
-      background-color: #cdd3d8c9;
+      background-color: #cdd3d8ea;
   }
+  /* #cdd3d8c9 */
   @media (max-width: 767px) {
     .col-2 {
       width: 100%;
@@ -453,7 +457,7 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    background: #57b846;
+    background: #2558ab;
   }
   
   .checkmark {
@@ -618,11 +622,12 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background: #fff;
+    /* background: #fff; */
+    
   }
   
   .card-4 {
-    background: #fff;
+    /* background: #fff; */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -641,4 +646,3 @@
       padding: 50px 40px;
     }
   }
-  

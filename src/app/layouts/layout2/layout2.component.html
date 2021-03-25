@@ -6,7 +6,11 @@
             <img src="assets/images/logo-light.png" alt="" class="logo-light" height="21">
             <img src="assets/images/logo-dark.png" alt="" class="logo-dark" height="21">
         </a> -->
-        <p class="navbar-brand logo text-primary" href="home">The Safest platform to Trade</p>
+        <div class="navbar-brand logo" href="home">
+            <h4 class=" text-light logo-light">The Safest platform to Trade</h4>
+            <h4 class=" text-primary logo-dark">The Safest platform to Trade</h4>
+           
+        </div>
         <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" 
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
             <i class="mdi mdi-menu"></i>
@@ -26,21 +30,21 @@
 
 <div>
 <!-- Hero Start -->
-<section class="hero-2-bg position-relative d-flex align-items-center bg-gradient-primary" id="home">
+<section class="hero-2-bg position-relative d-flex align-items-center bg" id="home">
     
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
                 <div class="card-body">
-                    <h2 class="title ">Mooning <span class="text-warning">Assets</span></h2>
+                    <h2 class="title "><img src="../../../assets/images/favicon.ico" height="35" class="mr-2 mb-1"  />Mooning <span class="text-warning">Assets</span></h2>
                     <form method="POST">
                         <div class="row row-space">
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="input-group">
                                     <label class="label">first name</label>
                                     <input class="input--style-4" type="text" name="first_name">
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="input-group">
                                     <label class="label">last name</label>
                                     <input class="input--style-4" type="text" name="last_name">
@@ -48,13 +52,13 @@
                             </div>
                         </div>
                         <div class="row row-space">
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="input-group">
                                     <label class="label">Password</label>
                                     <input class="input--style-4" type="password" name="password">
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-9">
                                 <div class="input-group">
                                     <label class="label">Gender</label>
                                     <div class="p-t-10">
@@ -71,13 +75,13 @@
                             </div>
                         </div>
                         <div class="row row-space">
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="input-group">
                                     <label class="label">Email</label>
                                     <input class="input--style-4" type="email" name="email">
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="input-group">
                                     <label class="label">Phone Number</label>
                                     <input class="input--style-4" type="text" name="phone">
@@ -97,7 +101,7 @@
                             </div>
                         </div> -->
                         <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn-warning" type="submit">Submit</button>
+                            <button class="btn btn--radius-2 btn-warning" type="submit">Register</button>
                         </div>
                     </form>
                 </div>
@@ -115,5 +119,5 @@
     <!-- Main JS-->
     <script src="../../../assets/js/global.js"></script>
 </section>
-
+<app-footer class="footer"></app-footer>
 </div>
